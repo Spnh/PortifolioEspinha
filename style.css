@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+
+body{
+	font-family: 'Stick No Bills', sans-serif;
+	background: linear-gradient(236.85deg, #BA31B2 27.26%,  #BF27B696.03%);#630764	background-image: ;
+	background-image: url(https://media.discordapp.net/attachments/891802712038051874/892179212465762324/fundo2.png?width=894&height=408);
+	background-size: cover;
+	
+}
+
+.perfil-foto{
+	border-radius: 400px;
+	max-height: 190px;
+	margin-left:40PX ;
+	margin-top: 15px;
+}
+
+.cabecalho{
+	display: flex;
+	justify-content: space-between;
+}
+
+.perfil{
+	display: flex;
+}
+
+#descricao{ 
+	margin-left: 30px ;
+}
+
+#descricao h1{
+	font-size:36px ;
+	font-weight: 700;
+}
+
+#descricao h3{
+	font-size:24px ;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.container{
+	background: #ECF4FF;
+	box-shadow: 6px 6px 6px rgb(50, 48, 66);
+	border-radius: 20px;
+	width: 1000px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	/*position: absolute;
+	width: 1250px;
+	height: 750px;
+	left: 90px;
+	top: 49px;*/
+}
+
+.projetos{
+	display: flex;
+	flex-direction: column;
+	align-items: justfy;
+	margin-top: 25px;
+	margin-bottom: -100px;
+}
+
+.projetos ol{
+	font-weight: bold;
+	font-size: 36px;
+	list-style-type: none;
+}
+.projetos  li{
+	font-size: 24px;
+}
+
+ a{
+ 	color: #333;
+ 	text-decoration: none;
+}
+a:hover{
+	color: rgb(220, 164, 80);
+	font-size: 30px;
+*/	
+}
+
+a:active{
+	font-size: 24px;
+	color: #333;
+}
+
+.tema{
+	padding: 8px 18px;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: rgb(220, 164, 80);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.2s;
+}
+
+input:checked + label {
+  background: #424242;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 40px;
+}
+
+.dark{
+	color: whitesmoke;
+	background-image: url(https://media.discordapp.net/attachments/891802712038051874/892925905964531772/fundo2.png?width=894&height=408);
+}
+
+.dark .container{
+	background-color: #152235;
+	box-shadow:6px 6px 6px rgb(8, 11, 32) ;
+
+}
+
+.dark a{
+	color:#424242 ;
+}
+
+.dark a:hover{
+	color: #8699ff;
+}
+
