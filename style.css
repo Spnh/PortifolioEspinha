@@ -26,6 +26,7 @@ body{
 
 #descricao{ 
 	margin-left: 30px ;
+	margin-top: -1px;
 }
 
 #descricao h1{
@@ -58,29 +59,32 @@ body{
 
 .projetos{
 	display: flex;
-	flex-direction: column;
 	align-items: justfy;
-	margin-top: 25px;
-	margin-bottom: -100px;
+	margin-top: 22px;
 }
 
 .projetos ol{
+	flex-direction: column;
 	font-weight: bold;
 	font-size: 36px;
 	list-style-type: none;
+
 }
 .projetos  li{
+	width:350px;
 	font-size: 24px;
 }
 
  a{
  	color: #333;
  	text-decoration: none;
+ 	transition: 0.5s;
 }
 a:hover{
 	color: rgb(220, 164, 80);
 	font-size: 30px;
-*/	
+
+	transform: scale(1.2)
 }
 
 a:active{
@@ -146,10 +150,42 @@ label:active:after {
 }
 
 .dark a{
-	color:#424242 ;
+	color:#BDBDBD ;
 }
 
 .dark a:hover{
 	color: #8699ff;
 }
 
+.redes-sociais {
+  margin-right: 5px;
+  transition: 0.5s;
+  max-height: 30px;
+}
+
+.redes-sociais:hover {
+  transform: scale(1.2);
+}
+
+footer{
+	margin-top: 25px;
+}
+
+.coluna {
+	padding-left: 235px;
+}
+
+/*Classe para fazer um texto ficar invisivel*/
+.ninja{
+	color: #ECF4FF;
+}
+.dark .ninja{
+	color:#152235 ;
+}
+
+
+.descLista{
+	font-size: 12px;
+	font-family: monospace;
+
+}
