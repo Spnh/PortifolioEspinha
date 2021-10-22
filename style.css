@@ -2,17 +2,18 @@
 
 body{
 	font-family: 'Stick No Bills', sans-serif;
-	background: linear-gradient(236.85deg, #BA31B2 27.26%,  #BF27B696.03%);#630764	background-image: ;
+	background: linear-gradient(236.85deg, #BA31B2 27.26%,  #BF27B696.03%);
 	background-image: url(https://media.discordapp.net/attachments/891802712038051874/892179212465762324/fundo2.png?width=894&height=408);
 	background-size: cover;
 	
 }
 
 .perfil-foto{
-	border-radius: 400px;
+	border-radius: 30px;
 	max-height: 190px;
 	margin-left:40PX ;
 	margin-top: 15px;
+	border:#323042 2px solid;
 }
 
 .cabecalho{
@@ -42,7 +43,7 @@ body{
 
 .container{
 	background: #ECF4FF;
-	box-shadow: 6px 6px 6px rgb(50, 48, 66);
+	box-shadow: 6px 6px 6px #323042;
 	border-radius: 20px;
 	width: 1000px;
 	height: 500px;
@@ -50,11 +51,6 @@ body{
 	margin-right: auto;
 	margin-top: 50px;
 	margin-bottom: 100px;
-	/*position: absolute;
-	width: 1250px;
-	height: 750px;
-	left: 90px;
-	top: 49px;*/
 }
 
 .projetos{
@@ -71,7 +67,7 @@ body{
 
 }
 .projetos  li{
-	width:350px;
+	width:400px;
 	font-size: 24px;
 }
 
@@ -137,7 +133,6 @@ input:checked + label:after {
 label:active:after {
   width: 40px;
 }
-
 .dark{
 	color: whitesmoke;
 	background-image: url(https://media.discordapp.net/attachments/891802712038051874/892925905964531772/fundo2.png?width=894&height=408);
@@ -147,6 +142,10 @@ label:active:after {
 	background-color: #152235;
 	box-shadow:6px 6px 6px rgb(8, 11, 32) ;
 
+}
+
+.dark .perfil-foto{
+	border: 2px solid  #424242;
 }
 
 .dark a{
@@ -172,7 +171,7 @@ footer{
 }
 
 .coluna {
-	padding-left: 235px;
+	padding-left: 180px;
 }
 
 /*Classe para fazer um texto ficar invisivel*/
