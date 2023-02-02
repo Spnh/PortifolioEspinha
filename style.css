@@ -5,12 +5,15 @@ body{
 	background: linear-gradient(236.85deg, #BA31B2 27.26%,  #BF27B696.03%);
 	background-image: url(https://media.discordapp.net/attachments/891802712038051874/892179212465762324/fundo2.png?width=894&height=408);
 	background-size: cover;
+	overflow: hidden;
 	
 }
 
 .perfil-foto{
 	border-radius: 30px;
-	max-height: 190px;
+	aspect-ratio: 5/6;
+	object-fit: cover ;
+	max-height: 200px;
 	margin-left:40PX ;
 	margin-top: 15px;
 	border:#323042 2px solid;
@@ -68,29 +71,33 @@ body{
 }
 .projetos  li{
 	width:400px;
-	font-size: 24px;
+	font-size: 26px;
+
 }
 
- a{
+ .linkSite{
  	color: #333;
  	text-decoration: none;
  	transition: 0.5s;
+
 }
-a:hover{
+.linkSite:hover{
 	color: rgb(220, 164, 80);
 	font-size: 30px;
-
+	cursor: pointer;
 	transform: scale(1.2)
 }
 
-a:active{
+.linkSite:active{
 	font-size: 24px;
 	color: #333;
+
 }
 
 .tema{
 	padding: 8px 18px;
 }
+
 
 input[type="checkbox"] {
   height: 0;
@@ -148,13 +155,15 @@ label:active:after {
 	border: 2px solid  #424242;
 }
 
-.dark a{
+.dark .linkSite{
 	color:#BDBDBD ;
 }
 
-.dark a:hover{
+.dark .linkSite:hover{
 	color: #8699ff;
 }
+
+
 
 .redes-sociais {
   margin-right: 5px;
@@ -187,4 +196,103 @@ footer{
 	font-size: 12px;
 	font-family: monospace;
 
+}
+.modal{
+	display: none;
+}
+.modalAberta{
+	background: #152235;
+	max-width: 50%;
+	max-height: 45%;
+	margin: auto;
+	margin-top: -40%;
+	position: relative;
+	border-radius: 25px;
+	border: black 1px solid;
+	box-shadow: 6px 6px 6px #323042;
+}
+.conteudoModal{
+	
+}
+.cabecalhoModal{
+	display: flex;
+	margin-bottom: 1px;
+	justify-content: right;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.corpoModal{
+	width: 100%;
+	margin: auto;
+}
+.corpoModal h2{
+	text-align: center;
+	color: white;
+}
+.introModal{
+	max-width: 80%;
+	margin: auto;
+}
+.imgModal{
+	max-width: 100%;
+	border-radius: 25px;
+	border: gray 1px solid;
+}
+.btnModal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	.btnFechaModal{
+		background: #152235;
+		color: white;
+		border: none;
+		cursor: pointer;
+	}
+
+.btnLink{
+	width: 90px;
+	height: 45px;
+	background: white;
+	color: black;
+	border-radius: 5px;
+	border: black 1px solid;
+	margin: auto;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+.btnFechaModal:hover{
+	color: darkgray;
+}
+.btnFechaModal:active{
+	color: gray;
+	font-size: 11px;
+}
+.btnLink:hover{
+	background: darkgray;
+}
+.btnLink:active{
+	font-size: 11px;
+	background: gray;
+}
+.dark .modalAberta{
+	background-color: rgb(220, 164, 80);
+
+}
+.dark .corpoModal h2{
+	text-align: center;
+	color: black;
+}
+.dark .btnFechaModal{
+		background:rgb(220, 164, 80);
+		color: #424242;
+		border: none;
+	}
+
+.dark .btnFechaModal:hover{
+	color: #262525;
+}
+.dark .btnFechaModal:active{
+	color: black;
+	font-size: 11px;
 }
