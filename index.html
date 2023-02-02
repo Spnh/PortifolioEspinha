@@ -4,26 +4,27 @@
 	<meta charset="UTF-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Portfólio</title>
+	<link rel="stylesheet" type="text/css" href="styleTeste.css">
+	<link rel="shortcut icon" href="https://genfavicon.com/tmp/icon_df389133318f604fb9c8c9531408b7b2.ico">
+	<title>Portfólio Gabriel A. Espinha</title>
 </head>
-<body>
+<body onload="carregaSite()">
 	<div class="container">
 		<header class="cabecalho">
 			<div class="perfil">
-						<img class="perfil-foto" src="https://media.discordapp.net/attachments/891802712038051874/901237502009024542/perfil2.png?width=375&height=408">
+						<img class="perfil-foto" src="https://media.discordapp.net/attachments/1070405371467927615/1070415643385544744/IMG-20230201-WA0014-02-removebg-preview.png?width=220&height=366">
 							<div id="descricao">
 								<h1>Gabriel Araujo Espinha</h1>
-								<h3>Estudante e aspirante a programador👨🏻‍💻.</h3>
+								<h3>Estudante e aspirante a programador.</h3>
 							</div>	
 					</div>
 					<footer>
         <div class="redes-sociais">
-          <a href="https://github.com/Spnh" target="_blank">
+          <a href="https://github.com/Spnh" target="blank_">
             <img class=redes-sociais src="https://media.discordapp.net/attachments/891802712038051874/893327469027938344/git_1.png?width=408&height=408"></a>
-          <a href="https://twitter.com/GabrielSpnh" target="_blank" >
+          <a href="https://twitter.com/GabrielSpnh" target="blank_" >
             <img class=redes-sociais src="https://media.discordapp.net/attachments/891802712038051874/901255092529922048/twitter2apagado.png"></a>
-           <a href="https://twitter.com/GabrielSpnh" target="_blank">
+           <a href="https://www.linkedin.com/in/gabriel-araujo-espinha-4156ab1bb/" target="blank_">
            <img class=redes-sociais src="https://media.discordapp.net/attachments/891802712038051874/893332078756769792/linkedin.png?width=408&height=408"></a>
         </div>
       </footer>	
@@ -35,29 +36,46 @@
 	
 		<main class="projetos">
 				<ol> Projetos:
-					<li><a alt="Calculadora de Médias" target="_blank"href="https://spnh.github.io/CalculadoraDeMedia/">👨🏻‍🏫 Calculadora</a></li>
-					<li><a target="_blank"href="https://spnh.github.io/ConversorDeMoedas/">💵 Conversor de Moedas</a></li>
-					<li><a target="_blank"href="https://spnh.github.io/Mentalista/">🔮 Mentalista</a></li>
-					<li><a target="_blank"href="https://spnh.github.io/AluraFlix/">🎦 AluraFlix</a></li>
-					<li><a target="_blank"href="https://spnh.github.io/SuperTrunfo/">🎮 SuperTrunfo</a></li>
+					<li><span class="linkSite" id="snake" onclick="carregaModal('snake')">Snake Game</span></li>
+					<li><span class="linkSite" id="alurafy" onclick="carregaModal('fy')">Alurafy</span></li>
+					<li><span class="linkSite" id="mentalista" onclick="carregaModal('men')"> Mentalista</span></li>
+					<li><span class="linkSite" id="aluraflix" onclick="carregaModal('flix')"> AluraFlix</span></li>
+					<li><span class="linkSite" id="calculadora" onclick="carregaModal('calc')"> Calculadora</span></li>
+
+					
 				</ol>
 					<div class="coluna">
-					<ol><span class="ninja"><!--Classe para fazer um texto ficar invisivel-->Projetos:</span>
-					<li>
-						<a target="blank"href="https://spnh.github.io/Olimpiada-Tokyo-2020/">🏅Tóquio 2020<span class="descLista"> Trabalho escolar</span></a>
-					</li>
-					<li>
-						<a target="_blank"href="https://spnh.github.io/Exoplanetas/">🪐Exoplanetas<span class="descLista"> Trabalho escolar</span></a>
-					</li>
-					<li>
-						<a target="blank"href="https://spnh.github.io/Alurafy/">🔊Alurafy</a>
-					</li>
-				</ol>
+						<ol><span class="ninja"><!--Classe para fazer um texto ficar invisivel-->Projetos:</span>
+						
+						<li><span class="linkSite" id="conversor" onclick="carregaModal('conv')"> Conversor de Moedas</span></li>
+						<li><span class="linkSite" id="qatar" onclick="carregaModal('qatar')">Qatar 2022<span class="descLista"> Trabalho escolar</span></span></li>
+						<li><span class="linkSite" id="toquio" onclick="carregaModal('toquio')">Tóquio 2020<span class="descLista"> Trabalho escolar</span></span></li>
+						<li><span class="linkSite" id="exoplanetas" onclick="carregaModal('exo')">Exoplanetas<span class="descLista"> Trabalho escolar</span></span></li>
+
+					</ol>
 				</div>
 
 		</main>
-</div>
-<script type="text/javascript" src="app.js"></script>
+	</div>
+
+	<div class="modal">
+			<div class="conteudoModal">
+				<div class="cabecalhoModal">	
+					<button class="btnFechaModal"onclick="fechaModal()">X</button>
+				</div>
+				<div class="corpoModal">
+					<h2 class="nomeModal"></h2>
+					<div class="introModal">
+						<img class="imgModal" src="">
+					</div>
+				</div>
+				<div class="btnModal">
+					<button class="btnLink"id="site" value="" onclick="vaiPraSite()">Site</button>
+					<button class="btnLink" id="repositorio" value="" onclick="vaiPraRep()">Repositório</button>
+				</div>
+			</div>
+	</div>
+<script type="text/javascript" src="appTeste.js"></script>
 </body>
 </html>
 
